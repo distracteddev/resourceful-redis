@@ -155,6 +155,7 @@ describe('engines-test', function() {
         Author.get('bob', function(err, obj) {
           should.not.exist(err);
           obj._id.should.equal('bob');
+          console.log("GOT", obj)
           obj.age.should.equal(35);
           obj.hair.should.equal('black');
           obj.resource.should.equal('Author');
